@@ -19,6 +19,10 @@ const Prompt = (props) => {
                     </button>
                     <span className="prompt-text">?</span>
                 </div>
+            } 
+            {
+                props.promptSent && 
+                <h4 className="prompt-text"><span>{props.optionAText}</span> or <span>{props.optionBText}</span> </h4>
             }
         </div>
     )

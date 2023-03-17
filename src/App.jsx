@@ -19,11 +19,19 @@ function App() {
     setSelected(buttonText);
   }
 
-  function refresh() {
+  function refreshPrompt() {
     const randomNumber = Math.floor(Math.random() * data.length);
     setOptionAText(data[randomNumber].optionA);
     setOptionBText(data[randomNumber].optionB);
     setSelected(null);
+  }
+
+  function refreshAll() {
+    const randomNumber = Math.floor(Math.random() * data.length);
+    setOptionAText(data[randomNumber].optionA);
+    setOptionBText(data[randomNumber].optionB);
+    setSelected(null);
+    setPromptSent(false);
   }
 
   function handleSendPrompt() {
@@ -42,7 +50,7 @@ function App() {
       />
       {!selected &&
         <div className="refresh">
-          <button className="refresh-btn" onClick={refresh}>
+          <button className="refresh-btn" onClick={refreshPrompt}>
             <FcRefresh />
           </button>
         </div>
@@ -55,6 +63,13 @@ function App() {
         sendPrompt={handleSendPrompt}
         // description={description}
       />
+      {promptSent &&
+        <div className="refresh">
+          <button className="refresh-btn" onClick={refreshAll}>
+            <FcRefresh />
+          </button>
+        </div>
+      }
     </div>
   )
 }
