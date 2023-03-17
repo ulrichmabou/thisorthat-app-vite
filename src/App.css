@@ -22,7 +22,7 @@ body {
   background-color: #fafafa;
   width: 500px;
   max-width: 800px;
-  height: 500px;
+  height: 600px;
   border-radius: 5px;
   padding: 20px;
 }
@@ -71,6 +71,29 @@ body {
   background-color: #ff7575;
   border: 1px solid #d35c31;
   color: #a8ffcf;
+}
+
+.refresh {
+  display: flex;
+}
+
+.refresh-btn {
+  border: 1px solid #9f6f9f;
+  background-color: #a8ffcf;
+  border-radius: 50px;
+}
+
+/* .refresh-btn:hover {
+  background-color: #ff7575;
+  border: 1px solid #d35c31;
+} */
+
+.refresh-btn:focus {
+  outline: none;
+}
+
+.refresh-btn:active {
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
 }
 
 .prompt-text {
