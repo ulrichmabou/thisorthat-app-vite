@@ -34,11 +34,13 @@ function App() {
         selection={selected}
         onButtonClick={handleButtonClick}
       />
-      <div className="refresh">
+      { !selected &&
+        <div className="refresh">
         <button className="refresh-btn" onClick={refresh}>
           <FcRefresh />
         </button>
       </div>
+      }
       <Feedback
         optionAText={optionAText}
         optionBText={optionBText}
