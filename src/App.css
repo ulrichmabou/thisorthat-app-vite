@@ -1,0 +1,116 @@
+#root {
+  max-width: 1280px; 
+  margin: 0 auto;
+  /* padding: 2rem; */
+  /* text-align: center; */
+}
+
+/* Own css from here  */
+
+body {
+  margin: 0;
+  background-color: #d4ecf7;
+  align-items: center;
+  padding: 10px;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #fafafa;
+  width: 500px;
+  max-width: 800px;
+  height: 500px;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 90%;
+  margin: auto;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 auto;
+  border-radius: 5px;
+  background-color: rgb(242, 242, 242);
+  color: #ff7575;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.prompt-container {
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  width: 90%;
+  margin: 0 auto;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #a8ffcf;
+}
+
+.prompt-btn {
+  background-color: #f2f2f2;
+  color: #9f6f9f;
+  border: 1px solid #9f6f9f;
+  font-family: 'Shantell Sans', cursive;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.prompt-btn:hover {
+  background-color: #ff7575;
+  border: 1px solid #d35c31;
+  color: #a8ffcf;
+}
+
+.prompt-text {
+  margin: 0 10px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #9f6f9f;
+}
+
+.feedback-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 300px;
+  width: 90%;
+  min-width: 300px;
+  margin: 0 auto;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+}
+
+.feedback-text {
+  display: flex;
+  font-size: 18px;
+  font-weight: 400;
+  color: #3C424D;
+}
+
+.feedback-text > span {
+  margin-left: 10px;
+  color: #ff7575;
+  font-weight: 500;
+
+}
+
+.feedback-prompt {
+  display: flex;
+  color: #3C424D;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px;
+}
