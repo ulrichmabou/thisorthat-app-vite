@@ -12,7 +12,8 @@ function App() {
   const [optionAText, setOptionAText] = useState(data[randomNumber].optionA);
   const [optionBText, setOptionBText] = useState(data[randomNumber].optionB);
   const [selected, setSelected] = useState(null);
-  const [description, setDescription] = useState('');
+  const [promptSent, setPromptSent] = useState(false);
+  // const [description, setDescription] = useState('');
 
   function handleButtonClick(buttonText) {
     setSelected(buttonText);
@@ -25,6 +26,10 @@ function App() {
     setSelected(null);
   }
 
+  function handleSendPrompt() {
+    setPromptSent(true);
+  }
+
   return (
     <div className="app-container">
       <Header />
@@ -33,19 +38,22 @@ function App() {
         optionBText={optionBText}
         selection={selected}
         onButtonClick={handleButtonClick}
+        promptSent={promptSent}
       />
-      { !selected &&
+      {!selected &&
         <div className="refresh">
-        <button className="refresh-btn" onClick={refresh}>
-          <FcRefresh />
-        </button>
-      </div>
+          <button className="refresh-btn" onClick={refresh}>
+            <FcRefresh />
+          </button>
+        </div>
       }
       <Feedback
         optionAText={optionAText}
         optionBText={optionBText}
         selection={selected}
-        description={description}
+        promptSent={promptSent}
+        sendPrompt={handleSendPrompt}
+        // description={description}
       />
     </div>
   )
