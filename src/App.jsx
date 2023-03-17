@@ -6,9 +6,9 @@ import { FcRefresh } from "react-icons/fc";
 import data from './Data'
 import './App.css'
 
+
 function App() {
   const randomNumber = Math.floor(Math.random() * data.length);
-
   const [optionAText, setOptionAText] = useState(data[randomNumber].optionA);
   const [optionBText, setOptionBText] = useState(data[randomNumber].optionB);
   const [selected, setSelected] = useState(null);
@@ -16,13 +16,13 @@ function App() {
 
   function handleButtonClick(buttonText) {
     setSelected(buttonText);
-    const randomNumber = Math.floor(Math.random() * data.length);
-    setOptionAText(data[randomNumber].optionA);
   }
 
-  function refreshPrompt() {
-    // TODO - hook refresh button
-    console.log("clicked!")
+  function refresh() {
+    const randomNumber = Math.floor(Math.random() * data.length);
+    setOptionAText(data[randomNumber].optionA);
+    setOptionBText(data[randomNumber].optionB);
+    setSelected(null);
   }
 
   return (
@@ -35,7 +35,7 @@ function App() {
         onButtonClick={handleButtonClick}
       />
       <div className="refresh">
-        <button className="refresh-btn" onClick={refreshPrompt}>
+        <button className="refresh-btn" onClick={refresh}>
           <FcRefresh />
         </button>
       </div>

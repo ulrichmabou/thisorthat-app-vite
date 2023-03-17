@@ -78,15 +78,10 @@ body {
 }
 
 .refresh-btn {
-  border: 1px solid #9f6f9f;
-  background-color: #a8ffcf;
+  border: none;
+  background-color: #fafafa;
   border-radius: 50px;
 }
-
-/* .refresh-btn:hover {
-  background-color: #ff7575;
-  border: 1px solid #d35c31;
-} */
 
 .refresh-btn:focus {
   outline: none;
