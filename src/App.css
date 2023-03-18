@@ -1,15 +1,13 @@
 #root {
   max-width: 1280px; 
   margin: 0 auto;
-  /* padding: 2rem; */
-  /* text-align: center; */
 }
 
-/* Own css from here  */
+/* Own css from here */
 
 body {
   margin: 0;
-  background-color: #d4ecf7;
+  background-color: #a6c9bb;
   align-items: center;
   padding: 10px;
 }
@@ -19,7 +17,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  background-color: #fafafa;
+  background-color: #e2f3d3;
   width: 500px;
   max-width: 800px;
   height: 600px;
@@ -38,8 +36,8 @@ body {
   font-weight: 700;
   margin: 0 auto;
   border-radius: 5px;
-  background-color: rgb(242, 242, 242);
-  color: #ff7575;
+  background-color: #486a7a;
+  color: #fee59a;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -51,13 +49,12 @@ body {
   margin: 0 auto;
   align-items: center;
   border-radius: 5px;
-  background-color: #a8ffcf;
+  background-color: #f0fff7;
 }
 
 .prompt-btn {
-  background-color: #f2f2f2;
-  color: #9f6f9f;
-  border: 1px solid #9f6f9f;
+  background-color: #b6ddc4;
+  color: #3e3e3c;
   font-family: 'Shantell Sans', cursive;
   border-radius: 5px;
   padding: 10px 20px;
@@ -68,9 +65,12 @@ body {
   transition: all 0.2s ease-in-out;
 }
 .prompt-btn:hover {
-  background-color: #ff7575;
-  border: 1px solid #d35c31;
-  color: #a8ffcf;
+  background-color: #486a7a;
+  color: #fee59a;
+}
+
+.prompt-btn:active {
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
 }
 
 .refresh {
@@ -79,7 +79,7 @@ body {
 
 .refresh-btn {
   border: none;
-  background-color: #a8ffcf;
+  background-color: #b6ddc4;
   border-radius: 50px;
 }
 
@@ -95,7 +95,7 @@ body {
   margin: 0 10px;
   font-size: 16px;
   font-weight: 500;
-  color: #9f6f9f;
+  color: #2e2e2e;
 }
 
 .feedback-container {
@@ -108,16 +108,15 @@ body {
   margin: 0 auto;
   align-items: center;
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color: #f0fff7;
 }
 
 .feedback-text {
   display: flex;
   font-size: 20px;
   font-weight: 700;
-  color: #ff7575;
+  color: #486a7a;
 }
-
 
 .next {
   display: flex;
@@ -125,7 +124,7 @@ body {
 
 .next-btn {
   border: none;
-  background-color: #a8ffcf;
+  background-color: #b6ddc4;
   border-radius: 50px;
 }
 
@@ -137,9 +136,9 @@ body {
   box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
 }
 
-.feedback-prompt {
+.feedback-result {
   display: flex;
-  color: #3C424D;
+  color: #2e2e2e;
   font-size: 16px;
   font-weight: 400;
   padding: 10px;
@@ -151,7 +150,7 @@ body {
 
 .refresh-all-btn {
   border: none;
-  background-color: #ff7575;
+  background-color: #b6ddc4;
   border-radius: 50px;
 }
 
