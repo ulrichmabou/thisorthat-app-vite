@@ -2,7 +2,7 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <div className="header">This||That</div>
+    <div className="header">this-or-that</div>
   )
 }
 

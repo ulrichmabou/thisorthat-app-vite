@@ -16,9 +16,7 @@ const Feedback = (props) => {
                     }
                 </div>
             }
-            {props.promptSent && <p className="feedback-result">
-                You are someone who prefers {props.selection === props.optionAText ? props.selection : props.optionBText} over {props.selection === props.optionAText ? props.optionBText : props.optionAText}.</p>}
-            {/* {props.description && <p className="feedback-description">{props.description}</p>} */}
+            {props.promptSent && <p className="feedback-response">{props.response}</p>}
         </div>
     )
 }
