@@ -5,7 +5,7 @@ const Feedback = (props) => {
 
     return (
         <div className="feedback-container">
-            {props.selection && <p className="feedback-text">You selected: <span>{props.selection}</span></p>}
+            {props.selection && <p className="feedback-text">{props.selection}</p>}
             {props.selection &&
                 <div className="next">
                     {

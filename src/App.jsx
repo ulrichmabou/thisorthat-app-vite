@@ -64,8 +64,8 @@ function App() {
         // description={description}
       />
       {promptSent &&
-        <div className="refresh">
-          <button className="refresh-btn" onClick={refreshAll}>
+        <div className="refresh-all">
+          <button className="refresh-all-btn" onClick={refreshAll}>
             <FcRefresh />
           </button>
         </div>

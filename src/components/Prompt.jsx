@@ -22,7 +22,7 @@ const Prompt = (props) => {
             } 
             {
                 props.promptSent && 
-                <h4 className="prompt-text"><span>{props.optionAText}</span> or <span>{props.optionBText}</span> </h4>
+                <h4 className="prompt-text"><span>{props.optionAText}</span> Or <span>{props.optionBText}</span> </h4>
             }
         </div>
     )

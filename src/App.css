@@ -79,7 +79,7 @@ body {
 
 .refresh-btn {
   border: none;
-  background-color: #fafafa;
+  background-color: #a8ffcf;
   border-radius: 50px;
 }
 
@@ -113,17 +113,11 @@ body {
 
 .feedback-text {
   display: flex;
-  font-size: 18px;
-  font-weight: 400;
-  color: #3C424D;
-}
-
-.feedback-text > span {
-  margin-left: 10px;
+  font-size: 20px;
+  font-weight: 700;
   color: #ff7575;
-  font-weight: 500;
-
 }
+
 
 .next {
   display: flex;
@@ -149,4 +143,22 @@ body {
   font-size: 16px;
   font-weight: 400;
   padding: 10px;
+}
+
+.refresh-all {
+  display: flex;
+}
+
+.refresh-all-btn {
+  border: none;
+  background-color: #ff7575;
+  border-radius: 50px;
+}
+
+.refres-all-btn:focus {
+  outline: none;
+}
+
+.refresh-all-btn:active {
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
 }
