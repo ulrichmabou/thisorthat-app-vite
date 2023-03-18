@@ -72,7 +72,6 @@ function App() {
     setGeneratedText('');
   }
 
-
   return (
     <div className="app-container">
       <Header />
@@ -98,7 +97,7 @@ function App() {
         sendPrompt={handleSendPrompt}
         response={generatedText}
       />
-      {promptSent &&
+      {promptSent && generatedText !== '' &&
         <div className="refresh-all">
           <button className="refresh-all-btn" onClick={refreshAll}>
             <FcRefresh />
